@@ -1,10 +1,10 @@
-// Last updated: 14/09/2026, 12:21:59 pm
+// Last updated: 14/09/2026, 12:22:19 pm
 class Solution {
 public:
 
     vector<int> getRow(int rowIndex) {
         vector<vector<int>> all_rows;
-        for (int i = 0; i <= rowIndex; i++) {
+        for (int i = 0; i <= 33; i++) {
             vector<int> curr_row;
             curr_row.push_back(1);
             if (i == 0) {
