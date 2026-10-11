@@ -1,16 +1,16 @@
-// Last updated: 11/10/2026, 1:36:40 pm
+// Last updated: 11/10/2026, 1:37:49 pm
 class Solution {
 public:
     bool isAnagram(string s, string t) {
-        unordered_map<char, int> first;
-        unordered_map<char, int> second;
+        unordered_map<char, int> y;
+        unordered_map<char, int> x;
         for (char c : s) {
-            first[c]++;
+            y[c]++;
         }
         for (char c : t) {
-            second[c]++;
+            x[c]++;
         }
-        if (first == second) return true;
+        if (x == y) return true;
         return false;
     }
 };
