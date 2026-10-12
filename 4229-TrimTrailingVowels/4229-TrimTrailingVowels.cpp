@@ -1,0 +1,15 @@
+// Last updated: 13/10/2026, 9:10:22 am
+class Solution {
+public:
+    string trimTrailingVowels(string s) {
+        for (int i = s.size() - 1; i >= 0; i--) {
+            if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u') {
+                s.erase(i, 1);
+            }
+            else {
+                break;
+            }
+        }
+        return s;
+    }
+};
